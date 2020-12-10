@@ -1,0 +1,48 @@
+
+<ion-content>
+  <ion-fab vertical="top" horizontal="start" slot="fixed">
+    <ion-fab-button color="transpanent" (click)="goback()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <div class="login">
+
+
+    <img src="assets/images/login-logo.png" alt="">
+    <form action="" >
+      <h1 class="center">HOola!</h1>
+      <p class="ion-text-center">Login to your account</p>
+      <ion-grid class="ion-padding ion-margin">
+        <ion-row>
+          <ion-col size="12">
+            <ion-input color="light" type="text" placeholder="User"></ion-input>
+          </ion-col>
+          <ion-col size="12">
+            <ion-input type="password" placeholder="Password"></ion-input>
+          </ion-col>
+          <ion-col size="12">
+
+            <ion-button class="login-button" (click)="login()" expand="block" color="logb" fill="solid">Lign In</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="ion-text-center forget-passwprd">I forgot my password</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+
+
+  <ion-grid  class="ion-margin ion-padding">
+    <ion-row>
+      <ion-col>
+        <ion-button color="mainbutton" expand="block" fill="solid" size="large">I have a Code</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+

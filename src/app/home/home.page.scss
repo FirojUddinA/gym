@@ -1,0 +1,41 @@
+ion-tab-bar {
+  border: 0;
+  border-radius: 50px;
+  overflow: hidden;
+  background: linear-gradient(to right, #00acac, #3f7486);
+  width: calc(100% - 20px);
+  left: 10px;
+  position: relative;
+  bottom: 15px;
+  height: 55px;
+  padding: 0;
+  display: flex;
+  .tab-selected{
+    color: #111111;
+  }
+  ion-tab-button {
+    width: 50px;
+    background-color: transparent;
+    color: #fff;
+    ion-icon {
+      font-size: 40px;
+    }
+    .button-native {
+      width: 50px;
+      text-align: left;
+    }
+    &:last-child {
+      ion-icon {
+        font-size: 50px;
+        position: absolute;
+        right: 15px;
+      }
+    }
+    &:first-child {
+      ion-icon {
+        position: absolute;
+        left: 20px;
+      }
+    }
+  }
+}
