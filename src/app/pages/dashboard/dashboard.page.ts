@@ -9,6 +9,9 @@ export class DashboardPage implements OnInit {
 
   constructor() { }
 
+  cribs = [{
+
+  }];
   ngOnInit() {
   }
 

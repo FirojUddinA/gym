@@ -1,0 +1,33 @@
+div.wraper{
+  background: #044d7a;
+  color: #ffffff;
+  display: flex;
+  border-radius:15px ;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px ;
+  div{
+
+    ion-title{
+      font-size: 18px;
+      word-break: break-word;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+    p{
+      margin: 0 !important;
+      padding-left: 15px;
+    }
+  }
+
+  img{
+
+    width: 44px;
+    height: 100%;
+    margin: 8px;
+
+  }
+}
