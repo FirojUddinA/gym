@@ -9,15 +9,16 @@ import {MiplanComponent} from './miplan/miplan.component';
 import {RectasComponent} from './rectas/rectas.component';
 import {RectasitemComponent} from './rectasitem/rectasitem.component';
 import {SliderComponent} from './slider/slider.component';
+import {RectasNullComponent} from './rectas-null/rectas-null.component';
 
 
 
 @NgModule({
 
   declarations: [ArencionComponent, FelictionComponent, MiejectionComponent,
-    MiplanComponent, RectasComponent, RectasitemComponent, SliderComponent],
+    MiplanComponent, RectasComponent, RectasitemComponent, SliderComponent, RectasNullComponent],
   exports: [ ArencionComponent, FelictionComponent, MiejectionComponent,
-    MiplanComponent, RectasComponent, RectasitemComponent, SliderComponent],
+    MiplanComponent, RectasComponent, RectasitemComponent, SliderComponent, RectasNullComponent],
   imports: [
     CommonModule,
     FormsModule,

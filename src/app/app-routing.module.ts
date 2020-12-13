@@ -14,12 +14,6 @@ const routes: Routes = [
     path: 'come-back',
     loadChildren: () => import('./pages/come-back/come-back.module').then( m => m.ComeBackPageModule)
   },
-  // {
-  //   path: 'index',
-  //   loadChildren: () => import('./index/index.module').then( m => m.IndexPageModule)
-  // },
-
-
 ];
 @NgModule({
   imports: [
