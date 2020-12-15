@@ -33,6 +33,10 @@ const routes: Routes = [
         loadChildren: () => import('../pages/mi-ejercicio/mi-ejercicio.module').then( m => m.MiEjercicioPageModule)
       },
       {
+        path: 'recetas-details',
+        loadChildren: () => import('../pages/recetas-details/recetas-details.module').then( m => m.RecetasDetailsPageModule)
+      },
+      {
         path: '',
         redirectTo: 'dashboard'
       }

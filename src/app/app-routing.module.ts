@@ -14,6 +14,15 @@ const routes: Routes = [
     path: 'come-back',
     loadChildren: () => import('./pages/come-back/come-back.module').then( m => m.ComeBackPageModule)
   },
+  {
+    path: 'plans',
+    loadChildren: () => import('./pages/plans/plans.module').then( m => m.PlansPageModule)
+  },
+  {
+    path: 'setting',
+    loadChildren: () => import('./setting/setting.module').then( m => m.SettingPageModule)
+  },
+
 ];
 @NgModule({
   imports: [

@@ -24,3 +24,17 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+ion-popover{
+  --backdrop-opacity:0;
+  --background: rgba(0,0,0,0);
+  --box-shadow: none;
+  --height:auto;
+  //--max-height	Maximum height of the popover
+  --max-width:200px;
+  //--min-height	Minimum height of the popover
+  //--min-width	Minimum width of the popover
+  --width:200px;
+}
+
