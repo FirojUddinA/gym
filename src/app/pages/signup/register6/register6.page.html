@@ -1,0 +1,76 @@
+<ion-header class="ion-no-border">
+
+  <ion-text color="light" >
+    <h3>Rellene los siguientes
+      datos</h3>
+  </ion-text>
+</ion-header>
+<ion-fab vertical="top" horizontal="center" slot="fixed" style="top: 110px">
+  <ion-fab-button color="gradient2" (click)="goback()">
+    <ion-icon name="chevron-back-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+<ion-fab vertical="bottom" horizontal="center" slot="fixed" style="bottom: 70px;">
+  <ion-fab-button color="gradient2" (click)="gofront()" style="height: 80px; width: 80px;">
+    <ion-icon name="chevron-forward-outline" ></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-content>
+
+  <h2>Datos antropométricos</h2>
+  <ion-text>
+    <ion-label position="fixed">Peso actual:</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-text>
+  <ion-text>
+    <ion-label position="fixed">Talla:</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-text>
+  <ion-text>
+    <ion-label position="fixed">Perímetro de la cadera:</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-text>
+  <ion-text>
+    <ion-label position="fixed">Perímetro de la cintura:</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-text>
+  <ion-text>
+    <ion-label position="fixed">Perímetro mitad brazo contraido:</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-text>
+  <ion-text>
+    <ion-label position="fixed">Perímetro del muslo alto:</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-text>
+
+
+  <h2>¿Haces ejercicio?</h2>
+
+  <div class="exercise">
+    <div class="take-yes">
+      <ion-checkbox></ion-checkbox>
+      <ion-label>SI</ion-label>
+    </div>
+    <div class="take-no">
+      <ion-checkbox></ion-checkbox>
+      <ion-label>NO</ion-label>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-grid  class="ion-text-center">
+    <ion-row>
+      <ion-col >
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-footer>

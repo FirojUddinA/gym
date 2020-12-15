@@ -1,0 +1,92 @@
+ion-content{
+  --padding-bottom: 40px;
+  .recepies-details{
+
+    .recepies-card{
+      margin-bottom: 15px;
+      position: relative;
+      line-height: 0;
+      img{
+        //height: 200px;
+      }
+      .recepies-card-body{
+        position: absolute;
+        width: 100%;
+        color: #f2f2f2;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 15px;
+        background: rgba(0,0,0,.6);
+        .left{
+          .time{
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+            img{
+              width: 22px;
+            }
+            span{
+              font-size: 12px;
+              margin-left: 5px;
+              color: #00ff48;
+              font-family: 'Montserrat', sans-serif;
+              strong{
+                font-size: 20px;
+              }
+            }
+          }
+          h2{
+            font-size: 40px;
+            text-transform: capitalize;
+            margin: 0;
+          }
+          h3{
+            font-size: 28px;
+
+            text-transform: capitalize;
+            margin: 0;
+          }
+        }
+        .right{
+          display: flex;
+          align-items: center;
+          span{
+            padding-left: 8px;
+            font-weight: bold;
+            font-size: 18px;
+          }
+        }
+      }
+
+    }
+  }
+  ion-title{
+    --color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+  }
+  p{
+    color: #949494;
+    font-size: 16px;
+    margin: 0 ;
+    line-height: 1.4;
+
+  }
+  ion-list{
+    ion-item{
+      --min-height:24px;
+      ion-label{
+        margin: 0!important;
+        color: #949494;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,110 @@
+
+ion-content {
+  --padding-start: 30px;
+  --padding-end: 30px;
+  --padding-top: 40px;
+  --padding-bottom: 40px;
+
+  ion-col{
+    ion-label, p.lable{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 15px;
+      width: 100%;
+
+    }
+    p.lable{
+
+    }
+  }
+  .gender-input{
+
+    display: flex;
+    justify-content: space-around;
+
+
+    .gender-wraper{
+
+      input:checked ~ label{
+        background: #00acac;
+        color: #f2f2f2;
+      }
+      &:first-child{
+        border-radius: 10px 0 0 10px;
+
+      }
+      &:last-child{
+        border-radius: 0 10px  10px 0;
+
+      }
+      position: relative;
+      width: 100%;
+      background: #000;
+      border: 2px solid #00acac;
+      height: 45px;
+      overflow: hidden;
+      label{
+        position: absolute;
+        background: #ffffff;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+        line-height: 45px;
+        text-align: center;
+        color: #00acac;
+
+      }
+    }
+  }
+  ion-radio-group{
+    ion-col{
+      border-right: 1px solid #000;
+    }
+    
+  }
+}
+ion-header{
+  background: linear-gradient(to left, #00acac, #3f7486);
+  height: 140px;
+  border-radius:0 0 50px 50px;
+
+
+  ion-text{
+    h3{
+      margin-top: 30px;
+      font-size: 30px;
+      text-align: center;
+      padding: 0 15px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+
+  }
+
+}
+
+ion-footer{
+  background: linear-gradient(to left, #00acac, #3f7486);
+  height: 110px;
+  border-radius: 50px 50px 0 0;
+  padding: 50px 0 0;
+
+  ion-icon {
+    font-size: 24px;
+    padding: 0 2px
+  }
+}
+
+ion-fab {
+  ion-fab-button{
+    --box-shadow: none !important;
+    ion-icon {
+      font-size: 42px !important;
+
+    }
+  }
+}
+

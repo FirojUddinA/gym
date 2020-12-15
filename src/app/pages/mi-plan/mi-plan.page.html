@@ -1,0 +1,137 @@
+<ion-header>
+  <ion-toolbar color="gradient2" >
+    <ion-buttons >
+      <ion-button shape="round" (click)="goBack()">
+        <ion-icon name="chevron-back" size="large" ></ion-icon>
+      </ion-button>
+      <ion-title class="ion-no-padding" >Mi Plan</ion-title>
+    </ion-buttons>
+
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <div class="center">
+          <div>
+            <h2>Lunes<span><ion-icon size="small" name="chevron-forward"></ion-icon></span></h2>
+          </div>
+          <p>23 Octubre</p>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="center">
+          <div>
+            <h2>Lunes<span><ion-icon size="small" name="chevron-forward"></ion-icon></span></h2>
+          </div>
+          <p>24Octubre</p>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="center">
+          <div>
+            <h2>Lunes<span><ion-icon size="small" name="chevron-forward"></ion-icon></span></h2>
+          </div>
+          <p>25 Octubre</p>
+        </div>
+      </ion-slide>
+    </ion-slides>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="ion-padding-vertical">
+        <div class="plan-card">
+          <div class="plan-card-head">
+            <ion-checkbox checked="checked"></ion-checkbox>
+            <ion-title class="ion-no-padding">Desayuno</ion-title>
+          </div>
+          <div class="plan-card-body">
+            <ion-list lines="none" class="ion-no-padding">
+              <ion-item>
+                <p><strong>1 Vaso</strong> yogur descremado</p>
+              </ion-item>
+              <ion-item>
+                <p>2 Tostadas</p>
+              </ion-item>
+              <ion-item>
+                <p><strong>4 Fetas</strong> Queso Magro</p>
+              </ion-item>
+            </ion-list>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col size="12" class="ion-padding-vertical">
+        <div class="plan-card">
+          <div class="plan-card-head">
+            <ion-checkbox ></ion-checkbox>
+            <ion-title class="ion-no-padding">Almuerzo</ion-title>
+          </div>
+          <div class="plan-card-body">
+            <ion-list lines="none" class="ion-no-padding">
+              <ion-item>
+                <p> <strong>2 Tazas</strong> de arroz blanco o integral</p>
+              </ion-item>
+              <ion-item>
+                <p><strong>1 Churasco</strong> carne magra</p>
+              </ion-item>
+              <ion-item>
+                <p><strong>Acompañar con vegetales crudos
+                  o cocidos.</strong></p>
+              </ion-item>
+            </ion-list>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col size="12" class="ion-padding-vertical">
+        <div class="plan-card">
+          <div class="plan-card-head">
+            <ion-checkbox ></ion-checkbox>
+            <ion-title class="ion-no-padding">Merienda</ion-title>
+          </div>
+          <div class="plan-card-body">
+            <ion-list lines="none" class="ion-no-padding">
+              <ion-item>
+                <p><strong>1 Taza 250ml</strong>  de café</p>
+              </ion-item>
+              <ion-item>
+                <p>2 Tostadas</p>
+              </ion-item>
+              <ion-item>
+                <p>4 <strong>Fetas</strong> Queso Magro</p>
+              </ion-item>
+            </ion-list>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col size="12" class="ion-padding-vertical">
+        <div class="plan-card">
+          <div class="plan-card-head">
+            <ion-checkbox ></ion-checkbox>
+            <ion-title class="ion-no-padding">Desayuno</ion-title>
+          </div>
+          <div class="plan-card-body">
+            <ion-list lines="none" class="ion-no-padding">
+              <ion-item>
+                <p>1 <strong>Vaso</strong> yogur descremado</p>
+              </ion-item>
+              <ion-item>
+                <p>2 Tostadas</p>
+              </ion-item>
+              <ion-item>
+                <p>4 <strong>Fetas</strong> Queso Magro</p>
+              </ion-item>
+            </ion-list>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+<ion-footer>
+  <div class="center">
+    <ion-icon  size="large" name="information-circle"></ion-icon>
+    <a >Necesito ayuda</a>
+  </div>
+</ion-footer>

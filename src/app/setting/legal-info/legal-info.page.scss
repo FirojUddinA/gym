@@ -1,0 +1,37 @@
+ion-content{
+ion-toolbar {
+  --padding-bottom: 100px;
+  --padding-top: 40px;
+  --padding-start: 8px;
+
+  overflow: visible;
+
+  ion-icon {
+    font-size: 48px;
+  }
+  ion-title {
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+
+}
+
+  h3{
+    font-size: 18px;
+
+    color: #686868;
+    margin: 0;
+  }
+  p{
+    margin: 0 16px;
+    padding:0 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #686868;
+  }
+
+}
+

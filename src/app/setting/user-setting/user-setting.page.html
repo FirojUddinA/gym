@@ -1,0 +1,49 @@
+<ion-content>
+  <ion-toolbar color="gradient2" class="ion-no-padding ">
+    <ion-buttons class="ion-no-padding">
+      <ion-button shape="round" class="ion-no-padding">
+        <ion-icon name="chevron-back"  ></ion-icon>
+      </ion-button>
+      <ion-title class="ion-no-padding" >Ajustes</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+  <div class="avater-profile">
+    <div class="user-avater">
+      <img class="avater-image" src="assets/userAAvater.jpg">
+      <button  class="chose-image">
+        <img src="/assets/icon/camara.png"  alt="upload picture"/>
+      </button>
+    </div>
+  </div>
+
+
+
+  <ion-list lines="none">
+    <ion-item class="ion-align-items-center" >
+      <img src="/assets/icon/user.png" alt="">
+      <ion-label>Mi Cuenta</ion-label>
+      <ion-icon slot="end" color="dark" name="chevron-forward"></ion-icon>    </ion-item>
+    <ion-item>
+      <img src="/assets/icon/notification.png" alt="">
+      <ion-label>Notificaciones</ion-label>
+      <ion-toggle slot="end" color="toggle"></ion-toggle>
+    </ion-item>
+
+    <ion-item class="ion-align-items-center" >
+      <img src="/assets/icon/help.png" alt="">
+      <ion-label>Ayuda con la App</ion-label>
+      <ion-icon slot="end" color="dark" name="chevron-forward"></ion-icon>    </ion-item>
+
+    <ion-item class="ion-align-items-center" (click)="presentActionSheet()">
+      <img src="/assets/icon/love.png" alt="">
+      <ion-label>Cuéntale a un amigo/a</ion-label>
+       <ion-icon slot="end" color="dark" name="chevron-forward"></ion-icon>
+    </ion-item>
+
+    <ion-item class="ion-align-items-center">
+      <img src="/assets/icon/about.png" alt="">
+      <ion-label>Información  Legal</ion-label>
+       <ion-icon slot="end" color="dark" name="chevron-forward"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

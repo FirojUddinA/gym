@@ -1,0 +1,88 @@
+<ion-header class="ion-no-border">
+
+  <ion-text color="light" >
+    <h3>Marque si alguna
+      corresponde</h3>
+  </ion-text>
+</ion-header>
+<ion-fab vertical="top" horizontal="center" slot="fixed" style="top: 110px">
+  <ion-fab-button color="gradient" (click)="goback()">
+    <ion-icon name="chevron-back-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+<ion-fab vertical="bottom" horizontal="center" slot="fixed" style="bottom: 70px;">
+  <ion-fab-button color="gradient2" (click)="gofront()" style="height: 80px; width: 80px;">
+    <ion-icon name="chevron-forward-outline" ></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-content>
+
+  <h2>¿Tiene alguna Alergia Alimentaria?</h2>
+
+  <ion-list class="reg-2 ion-no-margin ion-no-padding" >
+    <ion-item lines="none" class=" ion-no-margin ion-no-padding">
+      <ion-checkbox></ion-checkbox>
+      <ion-label>Intolerancia al gluten- Celiaquía</ion-label>
+    </ion-item>
+    <ion-item lines="none" class=" ion-no-margin ion-no-padding">
+      <ion-checkbox></ion-checkbox>
+      <ion-label>Intolerancia a la lactosa</ion-label>
+    </ion-item>
+    <ion-item lines="none" class=" ion-no-margin ion-no-padding">
+      <ion-checkbox></ion-checkbox>
+      <ion-label>Alergia a frutos secos</ion-label>
+    </ion-item>
+    <ion-item lines="none" class=" ion-no-margin ion-no-padding">
+      <ion-checkbox></ion-checkbox>
+      <ion-label>Alergia al pescado</ion-label>
+    </ion-item>
+    <ion-item lines="none" class=" ion-no-margin ion-no-padding">
+      <ion-checkbox></ion-checkbox>
+      <ion-label>Alergia a frutas cítricas</ion-label>
+    </ion-item>
+
+    <ion-item lines="none" class=" ion-no-margin ion-no-padding">
+      <ion-checkbox></ion-checkbox>
+      <ion-label>Otro</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div class="suppliment">
+    <h2>¿Toma alguna medicación y/o suplemento?</h2>
+    <div class="medicin">
+      <div class="take-medicin-yes">
+        <ion-checkbox></ion-checkbox>
+        <ion-label>SI</ion-label>
+      </div>
+      <div class="take-medicin-no">
+        <ion-checkbox></ion-checkbox>
+        <ion-label>NO</ion-label>
+      </div>
+    </div>
+    <ion-list class="ion-padding-top">
+      <ion-item lines="none">
+        <ion-label>Cual:</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-list>
+
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-grid  class="ion-text-center">
+    <ion-row>
+      <ion-col >
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-footer>

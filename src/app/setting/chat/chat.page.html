@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="" class="ion-no-padding ">
+    <ion-buttons class="ion-no-padding">
+      <ion-button shape="round" class="ion-no-padding" color="light">
+        <ion-icon name="chevron-back"  ></ion-icon>
+      </ion-button>
+      <ion-title class="ion-no-padding" >Ajustes</ion-title>
+    </ion-buttons>
+    <div class="avater-profile">
+      <div class="user-avater">
+        <div class="">
+          <img class="avater-image ion-float-left" src="assets/userAAvater.jpg">
+          <h2 class="ion-float-right">Lic. <br> Analia Delgado</h2>
+        </div>
+        <ion-buttons >
+          <ion-button color="light">
+            <ion-icon slot="icon-only" name="ellipsis-horizontal" ></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="closeable-alert">
+  <p>Horario de atención: <strong>Lunes a Viernes de 09:00hs a 19:00hs</strong></p>
+  <button  class="close-btn">
+    <ion-icon name="close"></ion-icon>
+  </button>
+</div>
+
+<div class="chat-box">
+  <ion-grid class="ion-align-items-end">
+    <ion-row>
+      <ion-col size="12" class="center">
+        <ion-note class="">27/10/2020 14:30</ion-note>
+      </ion-col>
+    </ion-row>
+    <ion-row class="user">
+      <ion-col >
+        <p>Hola, Analia. Necesito ayuda con la App.</p>
+      </ion-col>
+      <ion-col size="2">
+        <ion-avatar>
+          <ion-img src="assets/userAAvater.jpg"></ion-img>
+        </ion-avatar>
+      </ion-col>
+    </ion-row>
+    <ion-row class="customer-care">
+      <ion-col size="2">
+        <ion-avatar>
+          <ion-img src="assets/avater/avater2.png"></ion-img>
+        </ion-avatar>
+      </ion-col>
+      <ion-col >
+        <p>Hola, Valentina. Bien y tu? Dime en que te puedo ayudar.</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+</ion-content>
+
+
+<ion-footer>
+  <button class="add-button">
+    <ion-img src="assets/icon/add.png"></ion-img>
+  </button>
+  <ion-input></ion-input>
+  <button  class="send-btn">
+    <ion-img src="assets/icon/message.png"></ion-img>
+  </button>
+</ion-footer>

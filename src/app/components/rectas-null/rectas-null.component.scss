@@ -1,0 +1,30 @@
+div{
+  //background: linear-gradient(135deg,#98e05f, #0de3ac);
+  color: #ffffff;
+  background: #ffffff;
+  display: flex;
+  border-radius:15px ;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5px;
+  box-shadow: 0 0 10px 2px rgba(0,0,0,0.25);
+
+  ion-title{
+    opacity: 0;
+    font-size: 18px;
+    word-break: break-word;
+    margin: 15px 0;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  img{
+    opacity: 0;
+
+    width: 44px;
+    height: 100%;
+    margin: 8px;
+
+  }
+}

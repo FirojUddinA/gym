@@ -1,0 +1,71 @@
+<ion-content>
+  <div class="recepies-details">
+    <div class="recepies-card">
+      <img src="assets/recepies/details.jpg" alt="">
+      <div class="recepies-card-body">
+        <div class="left">
+          <div class="time">
+            <img src="assets/icon/clock.png" alt="clock"/>
+            <span><strong>20</strong>mins</span>
+          </div>
+          <h3>Tarta de</h3>
+          <h2>Zapallito</h2>
+        </div>
+        <div class="right" (click)="presentPopover($event);">
+          <ion-icon name="star-outline" size="large" color=""></ion-icon>
+          <span>9.1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-title>Ingredientes</ion-title>
+        <ion-list lines="none">
+          <ion-item>
+            <ion-label>Para el relleno:</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>3 o 4 Zapallitos</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>2 Huevos</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>½ Cebolla</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Condimentos a gusto</ion-label>
+          </ion-item>
+          <br>
+          <ion-item>
+            <ion-label>Para la masa:</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>1 taza de harina blanca</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>1 taza de harina integral</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>½ taza de agua tibia</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>¼ taza de aceite</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>1 Cdita de royal</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Semillitas (Opcional)</ion-label>
+          </ion-item>
+        </ion-list>
+
+        <ion-title>Preparación del relleno</ion-title>
+        <p class="ion-padding">Cortar los zapallitos en cubitos y hervirlos Mezclar con cebolla picada y cocida Agregar los huevos y condimentos a gusto Verter sobre la masa y llevar al horno</p>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,52 @@
+<ion-header class="ion-no-border">
+
+  <ion-text color="light" >
+    <h3>Marque si alguna
+      corresponde</h3>
+  </ion-text>
+</ion-header>
+<ion-fab vertical="top" horizontal="center" slot="fixed" style="top: 110px">
+  <ion-fab-button color="gradient" (click)="goback()">
+    <ion-icon name="chevron-back-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+<ion-fab vertical="bottom" horizontal="center" slot="fixed" style="bottom: 70px;">
+  <ion-fab-button color="gradient2" (click)="gofront()" style="height: 80px; width: 80px;">
+    <ion-icon name="chevron-forward-outline" ></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-content class="">
+
+  <h2>¿Tiene alguna enfermdad?</h2>
+
+  <ion-list class="reg-2 ion-no-margin ion-no-padding" >
+    <ion-item lines="none" class=" ion-no-margin ion-no-padding" *ngFor="let entry of form">
+      <ion-checkbox [(ngModel)]="entry.isChecked"></ion-checkbox>
+      <ion-label>{{entry.val}}</ion-label>
+    </ion-item>
+
+    <ion-item lines="none" class=" ion-no-margin ion-no-padding">
+      <ion-checkbox></ion-checkbox>
+      <ion-label>Otro
+      </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-grid  class="ion-text-center">
+    <ion-row>
+      <ion-col >
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-footer>

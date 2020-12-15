@@ -1,0 +1,135 @@
+button.close-btn{
+  margin-bottom: 16px;
+  width: 30px;
+  height: 30px;
+  background: #00acac;
+  position: relative;
+  left: calc( 50% - 15px );
+  color: #ffffff;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  &:focus{
+    outline: 0;
+    border: 0;
+  }
+  ion-icon{
+    font-size: 26px;
+  }
+}
+
+ion-list.search-input{
+  padding: 0 16px ;
+  ion-item{
+    --min-height:22px;
+    --padding-start: 0!important;
+    border-bottom: 2px solid #000000;
+    .item-native {
+    }
+    ion-label{
+      margin: 0 10px 0 0;
+    }
+    ion-input{
+      border: none!important;
+      --color: #000;
+      border-radius: 0 !important;
+      --padding-start:0;
+      --padding-end:0;
+      --padding-top:0;
+      --padding-bottom:0;
+
+      --placeholder-color:#a8a8a8;
+      .native-input{
+
+        border: 2px solid #00acac;
+        color: #000;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.food-group{
+  margin:0 18px;
+  padding: 18px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  //flex-basis: 10px;
+  align-content: stretch;
+  border-bottom: 2px solid #000000;
+  button{
+
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.25);
+    width: 21%;
+    &:focus{
+      outline: 0;
+      border: 0;
+    }
+
+  }
+}
+.recommended-food-group{
+  margin:0 18px;
+  padding: 18px 0 10px;
+  display: flex;
+  flex-direction: column;
+
+  .recommended-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  button{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.25);
+    width: 70px;
+    &:focus{
+      outline: 0;
+      border: 0;
+    }
+
+  }
+  .recommended-text{
+    width: calc( 100% - 80px );
+    margin-left: 10px;
+    h3{
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 0 0 5px;
+      ion-icon{
+        margin-left: 16px;
+      }
+      span{
+        padding-left: 8px;
+        font-family: 'Montserrat', sans-serif;
+        //font-weight: bold;
+        font-size: 12px;
+      }
+    }
+    p{
+      font-size: 8px;
+
+      margin: 0;
+    }
+  }
+}
+
+
+
+

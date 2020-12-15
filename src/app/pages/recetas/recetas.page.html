@@ -1,0 +1,84 @@
+<!--<ion-header>-->
+<!--  -->
+
+<!--</ion-header>-->
+<ion-content>
+  <ion-toolbar color="gradient2" >
+    <ion-buttons >
+      <ion-button shape="round">
+        <ion-icon name="chevron-back" size="large" ></ion-icon>
+      </ion-button>
+
+      <ion-title class="ion-no-padding" >Recetas</ion-title>
+    </ion-buttons>
+
+
+    <ion-buttons slot="end" class="search-button">
+      <button (click)="searchModal()" class="close-btn">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-toolbar>
+  <div class="recepies">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" class="ion-padding-horizontal">
+          <div class="recepies-card">
+            <img src="assets/recepies/recepie1.png" alt="">
+            <div class="recepies-card-body">
+              <div class="left">
+                <div class="time">
+                  <img src="assets/icon/clock.png" alt="clock"/>
+                  <span><strong>20</strong>mins</span>
+                </div>
+                <h3>Ensalada</h3>
+                <h2>Pepito</h2>
+              </div>
+              <div class="right">
+                <ion-icon name="star" size="large" color="warning"></ion-icon>
+                <span>9.1</span>
+              </div>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="12" class="ion-padding-horizontal">
+          <div class="recepies-card">
+            <img src="assets/recepies/recepie2.png" alt="">
+            <div class="recepies-card-body" >
+              <div class="left">
+                <div class="time">
+                  <img src="assets/icon/clock.png" alt="clock"/>                  <span><strong>20</strong>mins</span>
+                </div>
+                <h3>Budín de</h3>
+                <h2>Banana</h2>
+              </div>
+              <div class="right">
+                <ion-icon name="star-outline" size="large"></ion-icon>
+                <span>7.5</span>
+              </div>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="12" class="ion-padding-horizontal">
+          <div class="recepies-card">
+            <img src="assets/recepies/recepie3.png" alt="">
+            <div class="recepies-card-body">
+              <div class="left">
+                <div class="time">
+                  <img src="assets/icon/clock.png" alt="clock"/>                  <span><strong>20</strong>mins</span>
+                </div>
+                <h3>Tarta de</h3>
+                <h2>Zapallito</h2>
+              </div>
+              <div class="right">
+                <ion-icon name="star-outline" size="large"></ion-icon>
+                <span>8.3</span>
+              </div>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

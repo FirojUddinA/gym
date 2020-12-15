@@ -1,0 +1,94 @@
+
+ion-content {
+  --padding-start: 30px;
+  --padding-end: 30px;
+  --padding-top: 40px;
+  --padding-bottom: 70px;
+
+  ion-col{
+    ion-label{
+      font-family: 'Montserrat', sans-serif;
+      //font-weight: bold;
+      display: block;
+      margin-bottom: 15px;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+    --margin-bottom: 15px;
+    text-align: center;
+  }
+  .medicin{
+    display: flex;
+    justify-content: center;
+    div{
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      ion-label{
+        margin-left: 10px;
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+
+  }
+  ion-checkbox{
+    --border-radius:15px;
+    --border-style:solid;
+    --border-width: 2px;
+    --checkmark-color: #fff;
+    --checkmark-width: 2px;
+    --size: 25px;
+    --border-color-checked: #00acac;
+    --border-color: #00acac;
+    --background: #fff;
+    --background-checked: #00acac;
+
+  }
+}
+ion-header{
+  background: linear-gradient(to left, #00acac, #3f7486);
+  height: 140px;
+  border-radius:0 0 50px 50px;
+
+
+  ion-text{
+    h3{
+      margin-top: 30px;
+      font-size: 30px;
+      text-align: center;
+      padding: 0 15px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+
+  }
+
+}
+
+ion-footer{
+  background: linear-gradient(to left, #00acac, #3f7486);
+  height: 110px;
+  border-radius: 50px 50px 0 0;
+  padding: 50px 0 0;
+
+  ion-icon {
+    font-size: 24px;
+    padding: 0 2px
+  }
+}
+
+ion-fab {
+  ion-fab-button{
+    --box-shadow: none !important;
+    ion-icon {
+      font-size: 42px !important;
+
+    }
+  }
+}
+

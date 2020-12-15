@@ -1,0 +1,67 @@
+<ion-header class="ion-no-border">
+
+    <ion-text color="light" >
+      <h3>Completá tu
+        información personal</h3>
+    </ion-text>
+</ion-header>
+
+<ion-fab vertical="bottom" horizontal="center" slot="fixed" style="bottom: 70px;">
+  <ion-fab-button color="gradient2" (click)="gofront()" style="height: 80px; width: 80px;">
+    <ion-icon name="chevron-forward-outline" ></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-label position="fixed">Nombre Completo</ion-label>
+        <ion-input type="text" placeholder="Ingresa tu Nombre Completo"></ion-input>
+      </ion-col>
+      <ion-col size="12">
+        <ion-label position="fixed">Fecha de nacimiento</ion-label>
+        <ion-input type="date" placeholder="DD/MM/AAAA"></ion-input>
+      </ion-col>
+      <ion-col size="12">
+        <p class="lable">Sexo</p>
+        <div class="ion-text-center gender-input" >
+          <div class="gender-wraper">
+            <input type="radio" id="female" name="gender" value="female" checked>
+            <label for="female">Mujer</label>
+          </div>
+          <div class="gender-wraper">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Hombre</label>
+          </div>
+          <div class="gender-wraper">
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Otro</label>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-label position="fixed">Celular</ion-label>
+        <ion-input type="number" placeholder="Ingresa tu Número de Celular"></ion-input>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-grid  class="ion-text-center">
+    <ion-row>
+      <ion-col >
+        <ion-icon color="light" name="ellipse"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+        <ion-icon color="light" name="ellipse-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

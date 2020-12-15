@@ -1,0 +1,103 @@
+ion-content{
+  --background: #00acac;
+
+  .logo{
+    position: relative;
+
+    img{
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 999;
+      width: 45%;
+    }
+  }
+  .plan-content{
+    position: relative;
+    .plan-details{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,.45);
+      padding: 10px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .plan-details-content{
+
+        h3{
+          margin: 0;
+          text-align: center;
+          color: #ffffff;
+          font-size: 32px;
+
+        }
+        h2{
+          margin: 0 0 20px;
+          text-align: center;
+          color: #ffffff;
+          font-size: 38px;
+          text-shadow: -12x 12px  rgba(0, 0, 0, 1);
+          span {
+           color: #00acac;
+          }
+        }
+        p{
+          padding-left: 15%;
+          margin: 0 0 10px;
+          font-size: 20px;
+
+          font-weight: 400;
+        }
+      }
+    }
+    .plan-price{
+      position: absolute;
+      bottom: 5%;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      .plan-price-content{
+        text-align: center;
+        p.usd{
+          font-size: 22px;
+        }
+        h3.p-price{
+          font-size: 38px;
+          font-weight: 700;
+
+        }
+        P{
+          margin: 0 4px ;
+          font-size: 16px;
+          font-weight: 300;
+
+        }
+        ion-button{
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+
+
+.plans-footer{
+  padding: 20px 0;
+  margin: 0;
+  background: linear-gradient(50deg, #00acac, #3f7486);
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  box-shadow: 0 0 40px #000000 ;
+
+}
+
+

@@ -1,0 +1,47 @@
+ion-toolbar {
+
+  --padding-bottom: 40px;
+  --padding-top: 40px;
+  --padding-start: 8px;
+
+  overflow: visible;
+
+  ion-icon {
+    font-size: 48px;
+  }
+  ion-title {
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+}
+
+ion-list{
+
+  padding-top: 0!important;
+  border-top: 1px solid #868686;
+  &:first-child{
+    border-bottom: 1px solid #868686;
+
+  }
+  p{
+    margin: 0;
+    padding: 0 16px;
+  }
+  ion-item{
+    --min-height:45px;
+
+    ion-label{
+      font-weight: bold;
+      font-size: 18px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    ion-note{
+      font-size: 24px;
+
+    }
+  }
+}
+
