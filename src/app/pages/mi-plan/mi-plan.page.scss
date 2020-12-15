@@ -1,6 +1,4 @@
 ion-header {
-
-
   ion-toolbar {
     //--min-height:200px;
     --padding-bottom: 10px;
@@ -10,14 +8,15 @@ ion-header {
     .toolbar-container {
       align-items: baseline !important;
     }
-    ion-title {
-      font-size: 22px;
+    h2 {
+      font-size: 28px;
       font-family: 'Montserrat', sans-serif;
       font-weight: bold;
       text-transform: capitalize;
+      margin: 0;
     }
 
-    h2{
+   h3{
       font-size: 36px;
       font-weight: 400;
       span{
