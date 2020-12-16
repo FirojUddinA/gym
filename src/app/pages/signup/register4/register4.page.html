@@ -5,19 +5,18 @@
       datos</h3>
   </ion-text>
 </ion-header>
-<ion-fab vertical="top" horizontal="center" slot="fixed" style="top: 110px">
+<ion-fab class="top-fab" vertical="top" horizontal="center" slot="fixed">
   <ion-fab-button color="gradient" (click)="goback()">
     <ion-icon name="chevron-back-outline"></ion-icon>
   </ion-fab-button>
 </ion-fab>
-<ion-fab vertical="bottom" horizontal="center" slot="fixed" style="bottom: 70px;">
-  <ion-fab-button color="gradient2" (click)="gofront()" style="height: 80px; width: 80px;">
+<ion-fab class="bottom-fab" vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab-button color="gradient2" (click)="gofront()" >
     <ion-icon name="chevron-forward-outline" ></ion-icon>
   </ion-fab-button>
 </ion-fab>
-
 <ion-content>
-
+  <h2>Información alimentaria</h2>
   <ion-grid>
     <ion-row>
       <ion-col size="12">
@@ -43,7 +42,7 @@
   <p>¿Consumes frutas y verduras?</p>
   <div class="medicin">
     <div class="take-medicin-yes">
-      <ion-checkbox></ion-checkbox>
+      <ion-checkbox checked></ion-checkbox>
       <ion-label>SI</ion-label>
     </div>
     <div class="take-medicin-no">

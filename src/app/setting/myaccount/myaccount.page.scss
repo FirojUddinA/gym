@@ -1,7 +1,7 @@
 ion-toolbar {
 
-  --padding-bottom: 40px;
-  --padding-top: 40px;
+  --padding-bottom: 50px;
+  --padding-top: 50px;
   --padding-start: 8px;
 
   overflow: visible;
@@ -10,7 +10,7 @@ ion-toolbar {
     font-size: 48px;
   }
   h2 {
-    margin: 0;
+    margin: 0 0 0 -10px;
     font-size: 28px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -19,6 +19,9 @@ ion-toolbar {
 
 }
 
+.my-account{
+  margin-top: 35px;
+}
 ion-list{
 
   ion-item{
@@ -26,20 +29,18 @@ ion-list{
 
       --min-height:45px;
     }
-    --min-height:65px;
+    --min-height:70px;
     border-bottom: 1px solid #b9b9b9;
 
     p{
       margin: 0;
+      font-size: 20px;
+      color: #686868;
     }
     ion-label{
       font-weight: bold;
-      font-size: 18px;
+      font-size: 20px;
       font-family: 'Montserrat', sans-serif;
-    }
-    ion-note{
-      font-size: 24px;
-
     }
   }
 }

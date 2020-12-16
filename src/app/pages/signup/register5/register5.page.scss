@@ -20,19 +20,24 @@ ion-content {
       font-family: 'Montserrat', sans-serif;
       //font-weight: bold;
       display: block;
-      margin-bottom: 15px;
-
+      margin-bottom: 8px;
+      font-size: 17.55px;
       width: 100%;
       max-width: 100%;
       text-align: center;
     }
   }
+  ion-textarea{
+    height: 85px;
+
+  }
   p{
     font-family: 'Montserrat', sans-serif;
     //font-weight: bold;
 
-    --margin-bottom: 15px;
+
     text-align: center;
+    margin: 30px 0;
   }
   .Consumes{
     display: flex;
@@ -48,19 +53,6 @@ ion-content {
     }
 
   }
-  ion-checkbox{
-    --border-radius:15px;
-    --border-style:solid;
-    --border-width: 2px;
-    --checkmark-color: #fff;
-    --checkmark-width: 2px;
-    --size: 25px;
-    --border-color-checked: #00acac;
-    --border-color: #00acac;
-    --background: #fff;
-    --background-checked: #00acac;
-
-  }
 }
 ion-header{
   background: linear-gradient(to left, #00acac, #3f7486);
@@ -70,9 +62,10 @@ ion-header{
 
   ion-text{
     h3{
-      margin-top: 30px;
-      font-size: 30px;
+      margin-top: 40px;
+      font-size: 28px;
       text-align: center;
+      font-weight: 300;
       padding: 0 15px;
       font-family: 'Montserrat', sans-serif;
     }
@@ -89,18 +82,32 @@ ion-footer{
   padding: 50px 0 0;
 
   ion-icon {
-    font-size: 24px;
+    font-size: 20px;
     padding: 0 2px
   }
 }
 
-ion-fab {
+ion-fab.bottom-fab {
+  bottom: 70px;
   ion-fab-button{
     --box-shadow: none !important;
+    transform: translateX(-12px);
+    height: 80px; width: 80px;
     ion-icon {
-      font-size: 42px !important;
+      font-size: 62px !important;
 
     }
   }
 }
+ion-fab.top-fab {
+  top: 119px;
+  ion-fab-button{
+    --box-shadow: none !important;
+    transform: translateX(7px);
+    height: 40px; width: 40px;
+    ion-icon {
+      font-size: 35px !important;
 
+    }
+  }
+}

@@ -6,27 +6,31 @@ div.wraper{
   position: relative;
   align-items: center;
   justify-content: space-between;
-  padding: 10px ;
+  padding: 5px ;
   div{
 
     h3{
-      font-size: 18px;
+      font-size: 22px;
       word-break: break-word;
-      margin-bottom: 10px;
-      padding-left: 10px;
+      margin: 0 ;
+      padding-left: 8px;
       font-family: 'Montserrat', sans-serif;
       font-weight: bold;
+
+
     }
     p{
       margin: 0 !important;
-      padding-left: 15px;
+      padding-left: 8px;
+      padding-top: 4px;
+      font-size: 14px;
+      font-weight: 300;
     }
   }
 
   img{
 
-    width: 44px;
-    height: 100%;
+    width: 40px;
     margin: 8px;
 
   }

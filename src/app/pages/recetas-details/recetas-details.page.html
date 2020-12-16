@@ -1,18 +1,19 @@
 <ion-content>
+
   <div class="recepies-details">
     <div class="recepies-card">
-      <img src="assets/recepies/details.jpg" alt="">
+      <ion-icon class="back-b" name="chevron-back-outline"></ion-icon>
+      <img src="assets/recepies/food1.jpg" alt="">
       <div class="recepies-card-body">
         <div class="left">
           <div class="time">
             <img src="assets/icon/clock.png" alt="clock"/>
-            <span><strong>20</strong>mins</span>
+            <span><strong>40</strong>mins</span>
           </div>
-          <h3>Tarta de</h3>
-          <h2>Zapallito</h2>
+          <h2><span>Tarta de</span> <br>Zapallito</h2>
         </div>
         <div class="right" (click)="presentPopover($event);">
-          <ion-icon name="star-outline" size="large" color=""></ion-icon>
+          <ion-icon name="star-outline"  color=""></ion-icon>
           <span>9.1</span>
         </div>
       </div>
@@ -21,7 +22,7 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-title>Ingredientes</ion-title>
+        <h3>Ingredientes</h3>
         <ion-list lines="none">
           <ion-item>
             <ion-label>Para el relleno:</ion-label>
@@ -62,8 +63,8 @@
           </ion-item>
         </ion-list>
 
-        <ion-title>Preparación del relleno</ion-title>
-        <p class="ion-padding">Cortar los zapallitos en cubitos y hervirlos Mezclar con cebolla picada y cocida Agregar los huevos y condimentos a gusto Verter sobre la masa y llevar al horno</p>
+        <h3>Preparación del relleno</h3>
+        <p>Cortar los zapallitos en cubitos y hervirlos Mezclar con cebolla picada y cocida Agregar los huevos y condimentos a gusto Verter sobre la masa y llevar al horno</p>
 
       </ion-col>
     </ion-row>

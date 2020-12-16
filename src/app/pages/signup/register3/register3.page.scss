@@ -1,14 +1,15 @@
 
 ion-content {
-  --padding-start: 30px;
-  --padding-end: 30px;
+  //--padding-start: 30px;
+  //--padding-end: 30px;
   --padding-top: 40px;
   --padding-bottom: 60px;
   h2{
     font-family: 'Montserrat', sans-serif;
-    margin: 25px 0 20px;
+    //margin: 25px 0 20px;
+    line-height: 1.8;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 17.55px;
     text-align: center;
   }
   .medicin{
@@ -20,42 +21,43 @@ ion-content {
       padding: 0 15px;
       ion-label{
         margin-left: 10px;
+        color: #242424;
+        font-size: 17.55px;
+        font-weight: 300;
         font-family: 'Montserrat', sans-serif;
+
       }
     }
 
   }
 
+  ion-list.reg-2{
+  }
   ion-item{
-    --min-height: 40px;
+    --padding-start:25px;
+    --padding-end:20px;
+    --min-height: 35px;
 
     ion-checkbox{
       margin: 0;
     }
     ion-input{
       padding-left: 15px;
+      height: 32px;
     }
     ion-label{
       margin:0 10px;
+      padding-left: 6.5px;
       display: flex;
+      color: #242424;
+      font-size: 17.55px;
+      font-weight: 300;
       align-items: center;
       font-family: 'Montserrat', sans-serif;
 
     }
   }
-  ion-checkbox{
-    --border-radius:15px;
-    --border-style:solid;
-    --border-width: 2px;
-    --checkmark-color: #fff;
-    --checkmark-width: 2px;
-    --size: 25px;
-    --border-color-checked: #00acac;
-    --border-color: #00acac;
-    --background: #fff;
-    --background-checked: #00acac;
 
-  }
 }
 ion-header{
   background: linear-gradient(to left, #00acac, #3f7486);
@@ -65,9 +67,10 @@ ion-header{
 
   ion-text{
     h3{
-      margin-top: 30px;
-      font-size: 30px;
+      margin-top: 40px;
+      font-size: 28px;
       text-align: center;
+      font-weight: 300;
       padding: 0 15px;
       font-family: 'Montserrat', sans-serif;
     }
@@ -84,18 +87,32 @@ ion-footer{
   padding: 50px 0 0;
 
   ion-icon {
-    font-size: 24px;
+    font-size: 20px;
     padding: 0 2px
   }
 }
 
-ion-fab {
+ion-fab.bottom-fab {
+  bottom: 70px;
   ion-fab-button{
     --box-shadow: none !important;
+    transform: translateX(-12px);
+    height: 80px; width: 80px;
     ion-icon {
-      font-size: 42px !important;
+      font-size: 62px !important;
 
     }
   }
 }
+ion-fab.top-fab {
+  top: 119px;
+  ion-fab-button{
+    --box-shadow: none !important;
+    transform: translateX(7px);
+    height: 40px; width: 40px;
+    ion-icon {
+      font-size: 35px !important;
 
+    }
+  }
+}

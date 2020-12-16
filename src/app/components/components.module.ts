@@ -14,6 +14,7 @@ import {RattingPopoverComponent} from './ratting-popover/ratting-popover.compone
 import {PlansModalComponent} from './plans-modal/plans-modal.component';
 import {SearchModalComponent} from './search-modal/search-modal.component';
 import {SearchModal2Component} from './search-modal2/search-modal2.component';
+import {BasicPlanComponent} from './basic-plan/basic-plan.component';
 
 
 
@@ -21,10 +22,10 @@ import {SearchModal2Component} from './search-modal2/search-modal2.component';
 
   declarations: [ArencionComponent, FelictionComponent, MiejectionComponent,
     MiplanComponent, RectasComponent, RectasitemComponent, SliderComponent, RectasNullComponent,
-  RattingPopoverComponent, PlansModalComponent, SearchModalComponent, SearchModal2Component],
+  RattingPopoverComponent, BasicPlanComponent, PlansModalComponent, SearchModalComponent, SearchModal2Component],
   exports: [ ArencionComponent, FelictionComponent, MiejectionComponent,
     MiplanComponent, RectasComponent, RectasitemComponent, SliderComponent, RectasNullComponent,
-  RattingPopoverComponent, PlansModalComponent, SearchModalComponent, SearchModal2Component],
+  RattingPopoverComponent, BasicPlanComponent, PlansModalComponent, SearchModalComponent, SearchModal2Component],
   imports: [
     CommonModule,
     FormsModule,

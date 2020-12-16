@@ -1,7 +1,7 @@
 ion-content{
 ion-toolbar {
   --padding-bottom: 100px;
-  --padding-top: 40px;
+  --padding-top: 50px;
   --padding-start: 8px;
 
   overflow: visible;
@@ -20,19 +20,26 @@ ion-toolbar {
 
 }
 
-  h3{
-    font-size: 18px;
+  .info {
+    padding-top: 7px;
+    h3{
+      font-size: 18px;
+      color: #686868;
+      margin: 28px 0 0;
+      font-weight: 700;
 
-    color: #686868;
-    margin: 0;
+    }
+    p{
+      margin: 0 auto;
+      padding:0 16px;
+      font-size: 18px;
+      font-weight: 400;
+      color: #686868;
+      max-width: 386px;
+    }
   }
-  p{
-    margin: 0 16px;
-    padding:0 16px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #686868;
-  }
+
+
 
 }
 

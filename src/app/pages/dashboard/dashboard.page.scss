@@ -9,18 +9,16 @@ ion-content{
     }
     ion-text{
       font-size: 22px;
-      //--margin-bottom: 15px;
       p{
-        margin-bottom: 8px;
-
+        margin: 0;
         font-weight: bold;
       }
-
     }
     h2{
-        font-size: 28px;
+      font-size: 28px;
       font-family: 'Montserrat', sans-serif;
       font-weight: bold;
+      margin: 0;
     }
   }
   .slider-content{
@@ -31,7 +29,7 @@ ion-content{
   ion-grid{
     ion-row{
       ion-col{
-        --ion-grid-column-padding:10px;
+        --ion-grid-column-padding:9px;
       }
     }
   }

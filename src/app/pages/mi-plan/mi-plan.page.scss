@@ -2,48 +2,68 @@ ion-header {
   ion-toolbar {
     //--min-height:200px;
     --padding-bottom: 10px;
-    --padding-top: 16px;
+    --padding-top: 50px;
     --padding-start: 8px;
     --padding-end: 16px;
     .toolbar-container {
       align-items: baseline !important;
+    }
+    ion-buttons{
+
+    }
+    ion-button{
+      padding: 0;
+    }
+    ion-icon{
+      font-size: 46px;
     }
     h2 {
       font-size: 28px;
       font-family: 'Montserrat', sans-serif;
       font-weight: bold;
       text-transform: capitalize;
-      margin: 0;
+      margin: 0 0 0 -5px;
     }
 
-   h3{
-      font-size: 36px;
-      font-weight: 400;
-      span{
-        padding-left: 5px;
+    ion-slide{
+      div.center{
+        margin: 20px 0 50px;
+      }
+      h3{
+        font-size: 44px;
+        margin: 0;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        padding-left: 10px;
+        span{
+          padding-left: 5px;
+        }
+      }
+      p{
+        margin: 0;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
       }
     }
-  }
-
-
-
-
+    }
   }
 
 ion-content{
   --padding-bottom: 50px;
   --background: #fefefe;
   .plan-card{
+    padding: 15px 0 10px;
     .plan-card-head{
       display: flex;
       justify-content: start;
       align-items: center;
-      ion-title{
+      h3{
         padding-left: 8px ;
-        font-size: 26px;
-        font-weight: bold;
+        font-size: 32px;
+        font-weight: 600;
         font-family: 'Montserrat', sans-serif;
         color: #949494;
+        margin: 0;
       }
     }
     .plan-card-body{
@@ -67,19 +87,6 @@ ion-content{
 }
 
 
-ion-checkbox{
-  --border-radius:15px;
-  --border-style:solid;
-  --border-width: 2px;
-  --checkmark-color: #fff;
-  --checkmark-width: 2px;
-  --size: 20px;
-  --border-color-checked: #00acac;
-  --border-color: #00acac;
-  --background: #fff;
-  --background-checked: #00acac;
-
-}
 
 ion-footer{
   position: relative;
@@ -104,24 +111,24 @@ div{
   }
   ion-icon{
     position: absolute;
-    top: -30px;
-    left: calc( 50% - 15px );
-    height: 30px;
-    width: 30px;
-    color: red;
+    top: -13px;
+    left: calc( 50% - 8.5px );
+    height: 17px;
+    width: 17px;
+    color: #cf1f1f;
 
   }
 }
 
   a{
-
     color:#02aaab;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     //text-decoration: underline;
     position: relative;
-    text-underline-offset: 5px;
+    text-underline-offset: 2px;
     text-decoration: underline;
+    font-size: 10px;
 
   }
  }

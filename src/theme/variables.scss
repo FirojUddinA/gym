@@ -123,8 +123,26 @@
   --ion-color-toggle-shade: #00acac;
   --ion-color-toggle-tint: #00acac;
 
+
+  //rating
+  --ion-color-rating: #e9d31a;
+  --ion-color-rating-rgb: 0, 177, 177;
+  --ion-color-rating-contrast: #dddddd;
+  --ion-color-rating-contrast-rgb: 0, 0, 0;
+  --ion-color-rating-shade: #e9d31a;
+  --ion-color-rating-tint: #e9d31a;
+
 }
 
+.ion-color-rating{
+  --ion-color-base: var(--ion-color-toggle);
+  --ion-color-base-rgb: var(--ion-color-toggle-rgb);
+  --ion-color-contrast: var(--ion-color-toggle-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-toggle-contrast-rgb);
+  --ion-color-shade: var(--ion-color-toggle-shade);
+  --ion-color-tint: var(--ion-color-toggle-tint);
+
+}
 .ion-color-toggle{
   --ion-color-base: var(--ion-color-toggle);
   --ion-color-base-rgb: var(--ion-color-toggle-rgb);
@@ -338,13 +356,15 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: 'Montserrat', sans-serif !important;
+}
 body{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
 }
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
   font-weight: bold;
 }
 p{
@@ -366,6 +386,22 @@ ion-input{
   }
 }
 
+ion-textarea{
+  border: 2px solid #00acac;
+  --color: #000;
+  border-radius: 5px;
+  --padding-start:10px;
+  --padding-end:10px;
+  --placeholder-color:#ffffff;
+  padding-left: 10px;
+
+  .native-input{
+
+    border: 2px solid #00acac;
+    color: #000;
+    border-radius: 5px;
+  }
+}
 .custom-class{
 
   .popover-content{
@@ -420,10 +456,35 @@ ion-input{
    background: transparent !important;
    border: 1px solid #ffffff;
    opacity: 1;
-   width: 12px;
-   height: 12px;
+   width: 9px;
+   height: 9px;
    bottom: 0!important;
+   margin: 0 1.5px !important;
  }
 .swiper-pagination-bullet-active {
   background: #ffffff !important;
+}
+
+
+ion-checkbox{
+  --border-radius:15px;
+  --border-style:solid;
+  --border-width: 1.5px;
+  --checkmark-color: #fff;
+  --checkmark-width: 2px;
+  --size: 20px;
+  --border-color-checked: #00acac;
+  --border-color: #00acac;
+  --background: #fff;
+  --background-checked: #00acac;
+
+}
+
+.popover-content.sc-ion-popover-ios{
+  box-shadow: 0 1px 2px rgba(0,0,0,.5);
+
+}
+
+.share-with .action-sheet-button.sc-ion-action-sheet-ios{
+  color: #00acac;
 }

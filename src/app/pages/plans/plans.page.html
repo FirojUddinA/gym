@@ -1,12 +1,9 @@
 <ion-content>
-
+  <div class="logo">
+    <img src="/assets/images/login-logo.png" alt="">
+  </div>
   <ion-grid class="ion-no-padding">
     <ion-row>
-      <ion-col size="12">
-        <div class="logo">
-          <img src="/assets/images/login-logo.png" alt="">
-        </div>
-      </ion-col>
       <ion-col size="6" class="" style="padding-right: 5px">
         <div class="plan-content">
           <img src="assets/recepies/basicPlan.jpg" alt="basic plan">
@@ -25,7 +22,7 @@
               <P class="usd">USD</P>
               <h3 class="p-price">$9.99</h3>
               <p>MENSUALES</p>
-              <ion-button color="mainbutton" (click)="presentModal()">Ver detalles</ion-button>
+              <ion-button color="mainbutton" (click)="basicPlan()">Ver detalles</ion-button>
             </div>
           </div>
         </div>
@@ -47,7 +44,7 @@
               <P class="usd">USD</P>
               <h3 class="p-price">$29.99</h3>
               <p>MENSUALES</p>
-              <ion-button  color="mainbutton">Ver detalles</ion-button>
+              <ion-button  color="mainbutton" (click)="plusPlan()">Ver detalles</ion-button>
             </div>
           </div>
         </div>

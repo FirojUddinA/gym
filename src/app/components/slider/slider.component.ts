@@ -16,6 +16,8 @@ export class SliderComponent implements OnInit {
     autoPlay: true,
     speed: 400,
     pagination: false,
+    // width: 'auto',
+    slidePreView: 'auto',
   };
   constructor() { }
 

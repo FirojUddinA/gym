@@ -1,21 +1,18 @@
-<!--<ion-header>-->
-<!--  -->
 
-<!--</ion-header>-->
 <ion-content>
   <ion-toolbar color="gradient2" >
     <ion-buttons >
       <ion-button shape="round">
-        <ion-icon name="chevron-back" size="large" ></ion-icon>
+        <ion-icon name="chevron-back"></ion-icon>
       </ion-button>
 
-      <ion-title class="ion-no-padding" >Recetas</ion-title>
+      <h2 class="ion-no-padding" >Recetas</h2>
     </ion-buttons>
 
 
     <ion-buttons slot="end" class="search-button">
       <button (click)="searchModal()" class="close-btn">
-        <ion-icon name="search"></ion-icon>
+        <ion-icon name="search-outline"></ion-icon>
       </button>
     </ion-buttons>
 
@@ -23,8 +20,8 @@
   <div class="recepies">
     <ion-grid>
       <ion-row>
-        <ion-col size="12" class="ion-padding-horizontal">
-          <div class="recepies-card">
+        <ion-col size="12">
+          <div class="recepies-card large-one">
             <img src="assets/recepies/recepie1.png" alt="">
             <div class="recepies-card-body">
               <div class="left">
@@ -32,11 +29,10 @@
                   <img src="assets/icon/clock.png" alt="clock"/>
                   <span><strong>20</strong>mins</span>
                 </div>
-                <h3>Ensalada</h3>
-                <h2>Pepito</h2>
+                <h2><span>Ensalada</span> <br>Pepito</h2>
               </div>
               <div class="right">
-                <ion-icon name="star" size="large" color="warning"></ion-icon>
+                <ion-icon name="star" ></ion-icon>
                 <span>9.1</span>
               </div>
             </div>
@@ -50,8 +46,8 @@
                 <div class="time">
                   <img src="assets/icon/clock.png" alt="clock"/>                  <span><strong>20</strong>mins</span>
                 </div>
-                <h3>Budín de</h3>
-                <h2>Banana</h2>
+
+                <h2><span>Budín de</span><br>Banana</h2>
               </div>
               <div class="right">
                 <ion-icon name="star-outline" size="large"></ion-icon>
@@ -68,8 +64,8 @@
                 <div class="time">
                   <img src="assets/icon/clock.png" alt="clock"/>                  <span><strong>20</strong>mins</span>
                 </div>
-                <h3>Tarta de</h3>
-                <h2>Zapallito</h2>
+
+                <h2><span>Tarta de</span><br>Zapallito</h2>
               </div>
               <div class="right">
                 <ion-icon name="star-outline" size="large"></ion-icon>
@@ -82,3 +78,6 @@
     </ion-grid>
   </div>
 </ion-content>
+
+
+

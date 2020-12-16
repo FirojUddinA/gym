@@ -6,8 +6,8 @@
     </ion-text>
 </ion-header>
 
-<ion-fab vertical="bottom" horizontal="center" slot="fixed" style="bottom: 70px;">
-  <ion-fab-button color="gradient2" (click)="gofront()" style="height: 80px; width: 80px;">
+<ion-fab class="bottom-fab" vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab-button color="gradient2" (click)="gofront()" >
     <ion-icon name="chevron-forward-outline" ></ion-icon>
   </ion-fab-button>
 </ion-fab>
@@ -25,7 +25,7 @@
         <ion-input type="date" placeholder="DD/MM/AAAA"></ion-input>
       </ion-col>
       <ion-col size="12">
-        <p class="lable">Sexo</p>
+        <p class="">Sexo</p>
         <div class="ion-text-center gender-input" >
           <div class="gender-wraper">
             <input type="radio" id="female" name="gender" value="female" checked>

@@ -10,7 +10,8 @@ ion-header{
     ion-icon {
       font-size: 48px;
     }
-    ion-title {
+    h2 {
+      margin: 0 0 0 -12px;
       font-size: 28px;
       font-family: 'Montserrat', sans-serif;
       font-weight: bold;
@@ -51,12 +52,12 @@ ion-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:6px 16px;
+    padding:6px 20px;
     background: #ffffff;
 
     p {
       margin: 0;
-      font-size: 12px;
+      font-size: 10px;
       color: #373737;
     }
 
@@ -70,6 +71,7 @@ ion-content{
       justify-content: center;
       align-items: center;
       border-radius: 10px;
+      padding: 0 !important;
 
       &:focus {
         outline: 0;
@@ -77,7 +79,7 @@ ion-content{
       }
 
       ion-icon {
-        //font-size: 15px;
+        font-size: 10px;
       }
     }
   }
@@ -111,17 +113,19 @@ ion-content{
         margin: 0;
         border-radius: 16px;
         font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
       }
     }
     .user {
       margin-bottom: 16px;
       p {
-        background: #00acac;
+        background: #04a8a9;
         color: #ffffff;
         padding: 16px;
         margin: 0;
         border-radius: 16px;
         font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
       }
     }
   }
@@ -131,6 +135,7 @@ ion-content{
 ion-footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px;
   background: #ffffff;
   ion-input{
@@ -142,6 +147,7 @@ ion-footer {
     --padding-end:10px;
     --placeholder-color:#ffffff;
     margin: 0 10px;
+    height: 30px;
 
   }
   button.add-button{

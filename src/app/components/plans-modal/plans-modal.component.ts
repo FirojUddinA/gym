@@ -7,9 +7,7 @@ import {ModalController} from '@ionic/angular';
   styleUrls: ['./plans-modal.component.scss'],
 })
 export class PlansModalComponent implements OnInit {
-  @Input() firstName: string;
-  @Input() lastName: string;
-  @Input() middleInitial: string;
+
   constructor(private modalCtrl: ModalController) { }
 
   ngOnInit() {}

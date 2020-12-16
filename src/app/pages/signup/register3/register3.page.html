@@ -5,22 +5,22 @@
       corresponde</h3>
   </ion-text>
 </ion-header>
-<ion-fab vertical="top" horizontal="center" slot="fixed" style="top: 110px">
+<ion-fab class="top-fab" vertical="top" horizontal="center" slot="fixed">
   <ion-fab-button color="gradient" (click)="goback()">
     <ion-icon name="chevron-back-outline"></ion-icon>
   </ion-fab-button>
 </ion-fab>
-<ion-fab vertical="bottom" horizontal="center" slot="fixed" style="bottom: 70px;">
-  <ion-fab-button color="gradient2" (click)="gofront()" style="height: 80px; width: 80px;">
+<ion-fab class="bottom-fab" vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab-button color="gradient2" (click)="gofront()" >
     <ion-icon name="chevron-forward-outline" ></ion-icon>
   </ion-fab-button>
 </ion-fab>
 
 <ion-content>
 
-  <h2>¿Tiene alguna Alergia Alimentaria?</h2>
+  <h2>¿Tiene alguna Alergia <br> Alimentaria?</h2>
 
-  <ion-list class="reg-2 ion-no-margin ion-no-padding" >
+  <ion-list class="reg-2" >
     <ion-item lines="none" class=" ion-no-margin ion-no-padding">
       <ion-checkbox></ion-checkbox>
       <ion-label>Intolerancia al gluten- Celiaquía</ion-label>

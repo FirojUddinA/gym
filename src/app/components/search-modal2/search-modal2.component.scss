@@ -1,26 +1,27 @@
-
+ion-content{
+  --padding-start: 9px;
+  --padding-end: 9px;
+}
 
 button.close-btn{
-  margin-bottom: 16px;
-  width: 30px;
-  height: 30px;
+  width: 37px;
+  height: 37px;
   background: #00acac;
   position: relative;
-  left: calc( 50% - 15px );
+  left: calc( 50% - 18.5px );
   color: #ffffff;
   margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 30px;
-  text-align: center;
-  border-radius: 15px;
+  margin-bottom: 40px;
+  padding: 0;
+
+  border-radius: 50%;
   &:focus{
     outline: 0;
     border: 0;
   }
   ion-icon{
-    font-size: 26px;
+    font-size: 35px;
+    line-height: 37px;
   }
 }
 
@@ -29,7 +30,7 @@ ion-list.search-input{
   ion-item{
     --min-height:22px;
     --padding-start: 0!important;
-    border-bottom: 2px solid #000000;
+    border-bottom: 1px solid #000000;
     .item-native {
     }
     ion-label{
@@ -42,76 +43,88 @@ ion-list.search-input{
       --padding-start:0;
       --padding-end:0;
       --padding-top:0;
-      --padding-bottom:0;
-
-      --placeholder-color:#a8a8a8;
-      .native-input{
-
-        border: 2px solid #00acac;
-        color: #000;
-        border-radius: 5px;
+      --padding-bottom:6px;
+      --placeholder-color: #3b3a3a;
+      font-weight: 700;
+      outline: 0;
+      .native-input:focus{
+        outline: 0;
       }
+    }
+    ion-icon{
+      font-size: 20px;
     }
   }
 }
 
 .recepies-resualt{
-
-  margin-top: 8px;
+  padding: 20px 0 10px;
   .recepies-card{
     position: relative;
     img{
       border-radius: 23px;
       box-shadow: 0 0 10px 2px rgba(0,0,0,0.7);
     }
+    &:after{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, rgba(0,0,0,.7), rgba(0,0,0,.4), rgba(0,0,0,.1));
+      left: 0;
+      bottom: 0;
+      border-radius: 23px !important;
+    }
     .recepies-card-body{
-      border-radius: 23px;
       position: absolute;
       width: 100%;
       color: #f2f2f2;
       max-height: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.7);
       left: 0;
       bottom: 0;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      padding: 12px 15px ;
+      padding: 20px 20px 10px;
+      z-index: 99;
       .left{
         .time{
           display: flex;
           align-items: center;
           img{
-            width: 24px;
+            width: 22px;
           }
           span{
-            margin-left: 5px;
+            margin-left: 10px;
             color: #00ff48;
+            font-size: 10px;
             font-family: 'Montserrat', sans-serif;
             strong{
-              font-size: 20px;
+              font-size: 16px;
             }
           }
         }
         h2{
           font-size: 36px;
-          font-family: 'Montserrat', sans-serif;
-          font-weight: bold;
           text-transform: capitalize;
           margin: 0;
-        }
-        h3{
-          font-size: 24px;
-          font-family: 'Montserrat', sans-serif;
           font-weight: bold;
-          text-transform: capitalize;
-          margin: 0;
+          line-height: 1;
+
+          span{
+            font-size: 24px;
+
+          }
         }
+
       }
       .right{
         display: flex;
         align-items: center;
+        ion-icon{
+
+          font-size: 26px;
+        }
         span{
           padding-left: 8px;
           font-family: 'Montserrat', sans-serif;
@@ -126,32 +139,36 @@ ion-list.search-input{
 
 
 .food-group{
-  margin:0 18px;
-  padding: 18px 0 10px;
+  margin:0 5px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  //flex-basis: 10px;
   align-content: stretch;
-  border-bottom: 2px solid #000000;
-  button{
 
+
+  .button-wraper{
+    width: 25%;
+    padding: 8px 12.5px;
+  }
+  button{
     padding: 12px;
-    margin-bottom: 10px;
     border-radius: 8px;
     background: #ffffff;
-    box-shadow: 0 0 8px rgba(0,0,0,0.25);
-    width: 21%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
     &:focus{
       outline: 0;
       border: 0;
     }
 
+    img{
+      width: 100%;
+    }
   }
 }
 .recommended-food-group{
+  border-top: 1px solid #000000;
   margin:0 18px;
-  padding: 18px 0 150px;
+  padding: 18px 0 50px;
   display: flex;
   flex-direction: column;
 
@@ -161,6 +178,10 @@ ion-list.search-input{
     justify-content: start;
     align-items: center;
     margin-bottom: 8px;
+    .button-wraper{
+      width: 25%;
+      padding-right: 12.5px;
+    }
   }
   button{
     padding: 10px;
@@ -168,7 +189,7 @@ ion-list.search-input{
     border-radius: 8px;
     background: #ffffff;
     box-shadow: 0 0 8px rgba(0,0,0,0.25);
-    width: 70px;
+
     &:focus{
       outline: 0;
       border: 0;
@@ -176,8 +197,7 @@ ion-list.search-input{
 
   }
   .recommended-text{
-    width: calc( 100% - 80px );
-    margin-left: 10px;
+    width: 75%;
     h3{
       display: flex;
       align-items: center;
@@ -191,12 +211,12 @@ ion-list.search-input{
         padding-left: 8px;
         font-family: 'Montserrat', sans-serif;
         //font-weight: bold;
-        font-size: 12px;
+        font-size: 9px;
       }
     }
     p{
-      font-size: 6.5px;
-      margin: 0;
+      font-size: 6px;
+      margin: 0 0 12px 0;
     }
   }
 }

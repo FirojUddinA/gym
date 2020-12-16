@@ -5,17 +5,16 @@
       datos</h3>
   </ion-text>
 </ion-header>
-<ion-fab vertical="top" horizontal="center" slot="fixed" style="top: 110px">
-  <ion-fab-button color="gradient2" (click)="goback()">
+<ion-fab class="top-fab" vertical="top" horizontal="center" slot="fixed">
+  <ion-fab-button color="gradient" (click)="goback()">
     <ion-icon name="chevron-back-outline"></ion-icon>
   </ion-fab-button>
 </ion-fab>
-<ion-fab vertical="bottom" horizontal="center" slot="fixed" style="bottom: 70px;">
-  <ion-fab-button color="gradient2" (click)="gofront()" style="height: 80px; width: 80px;">
+<ion-fab class="bottom-fab" vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab-button color="gradient2" (click)="gofront()" >
     <ion-icon name="chevron-forward-outline" ></ion-icon>
   </ion-fab-button>
 </ion-fab>
-
 <ion-content>
 
   <h2>Datos antropométricos</h2>
@@ -45,7 +44,7 @@
   </ion-text>
 
 
-  <h2>¿Haces ejercicio?</h2>
+  <h2 class="reg6-h2">¿Haces ejercicio?</h2>
 
   <div class="exercise">
     <div class="take-yes">

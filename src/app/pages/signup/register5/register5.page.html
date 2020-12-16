@@ -5,13 +5,13 @@
       datos</h3>
   </ion-text>
 </ion-header>
-<ion-fab vertical="top" horizontal="center" slot="fixed" style="top: 110px">
+<ion-fab class="top-fab" vertical="top" horizontal="center" slot="fixed">
   <ion-fab-button color="gradient" (click)="goback()">
     <ion-icon name="chevron-back-outline"></ion-icon>
   </ion-fab-button>
 </ion-fab>
-<ion-fab vertical="bottom" horizontal="center" slot="fixed" style="bottom: 70px;">
-  <ion-fab-button color="gradient2" (click)="gofront()" style="height: 80px; width: 80px;">
+<ion-fab class="bottom-fab" vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab-button color="gradient2" (click)="gofront()" >
     <ion-icon name="chevron-forward-outline" ></ion-icon>
   </ion-fab-button>
 </ion-fab>
@@ -20,8 +20,9 @@
   <div class="reg-5">
 
         <ion-text>
-          <ion-label position="fixed">¿Qué desayunas habitualmente?</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-label position="fixed">¿Tienes alimentos que no te gustan
+            consumir?</ion-label>
+          <ion-textarea></ion-textarea>
         </ion-text>
 
 

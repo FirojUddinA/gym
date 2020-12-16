@@ -16,10 +16,9 @@ export class UserSettingPage implements OnInit {
 
   async presentActionSheet() {
     const actionSheet = await this.actionSheetController.create({
-      cssClass: 'my-custom-class',
+      cssClass: 'share-with',
       buttons: [{
         text: 'Correr',
-        role: 'destructive',
         handler: () => {
           console.log('Delete clicked');
         }
@@ -34,8 +33,7 @@ export class UserSettingPage implements OnInit {
           console.log('Play clicked');
         }
       }, {
-        text: 'Cancel',
-        icon: 'close',
+        text: 'Cancelar',
         role: 'cancel',
         handler: () => {
           console.log('Cancel clicked');
