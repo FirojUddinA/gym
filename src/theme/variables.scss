@@ -135,12 +135,12 @@
 }
 
 .ion-color-rating{
-  --ion-color-base: var(--ion-color-toggle);
-  --ion-color-base-rgb: var(--ion-color-toggle-rgb);
-  --ion-color-contrast: var(--ion-color-toggle-contrast);
-  --ion-color-contrast-rgb: var(--ion-color-toggle-contrast-rgb);
-  --ion-color-shade: var(--ion-color-toggle-shade);
-  --ion-color-tint: var(--ion-color-toggle-tint);
+  --ion-color-base: var(--ion-color-rating);
+  --ion-color-base-rgb: var(--ion-color-rating-rgb);
+  --ion-color-contrast: var(--ion-color-rating-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-rating-contrast-rgb);
+  --ion-color-shade: var(--ion-color-rating-shade);
+  --ion-color-tint: var(--ion-color-rating-tint);
 
 }
 .ion-color-toggle{
