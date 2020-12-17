@@ -1,7 +1,5 @@
 
 ion-content {
-  //--padding-start: 30px;
-  //--padding-end: 30px;
   --padding-top: 40px;
   --padding-bottom: 60px;
   h2{
@@ -62,19 +60,15 @@ ion-header{
   height: 140px;
   border-radius:0 0 50px 50px;
 
-
-  ion-text{
-    h3{
+    h3 {
       margin-top: 40px;
       font-size: 28px;
       text-align: center;
       font-weight: 300;
       padding: 0 15px;
       font-family: 'Montserrat', sans-serif;
+      color: #ffffff;
     }
-
-
-  }
 
 }
 

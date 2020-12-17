@@ -10,7 +10,7 @@ ion-content {
   flex-direction: column;
 
   .reg-5{
-    //height: 100%;
+
     margin: 45% 0;
 
   }
@@ -58,9 +58,6 @@ ion-header{
   background: linear-gradient(to left, #00acac, #3f7486);
   height: 140px;
   border-radius:0 0 50px 50px;
-
-
-  ion-text{
     h3{
       margin-top: 40px;
       font-size: 28px;
@@ -69,10 +66,6 @@ ion-header{
       padding: 0 15px;
       font-family: 'Montserrat', sans-serif;
     }
-
-
-  }
-
 }
 
 ion-footer{

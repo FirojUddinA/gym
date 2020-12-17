@@ -581,3 +581,15 @@ ion-checkbox{
 .share-with .action-sheet-button.sc-ion-action-sheet-ios{
   color: #00acac;
 }
+body.dark{
+  ion-footer{
+    div{
+
+      &:before{
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(2,2,2,0.7) 50%, rgba(0,0,0,0.2) 100%);
+      }
+
+    }
+  }
+}
