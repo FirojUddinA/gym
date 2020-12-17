@@ -123,6 +123,13 @@
   --ion-color-toggle-shade: #00acac;
   --ion-color-toggle-tint: #00acac;
 
+  --ion-color-loading: linear-gradient(123deg,rgba(62,117,133,.79), rgba(0,172,172,.79));
+  --ion-color-loading-rgb: 0, 177, 177;
+  --ion-color-loading-contrast: #dddddd;
+  --ion-color-loading-contrast-rgb: 0, 0, 0;
+  --ion-color-loading-shade: #00acac;
+  --ion-color-loading-tint: #00acac;
+
 
   //rating
   --ion-color-rating: #e9d31a;
@@ -184,6 +191,15 @@
   --ion-color-contrast-rgb: var(--ion-color-toggle-contrast-rgb);
   --ion-color-shade: var(--ion-color-toggle-shade);
   --ion-color-tint: var(--ion-color-toggle-tint);
+
+}
+.ion-color-loading{
+  --ion-color-base: var(--ion-color-loading);
+  --ion-color-base-rgb: var(--ion-color-loading-rgb);
+  --ion-color-contrast: var(--ion-color-loading-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-loading-contrast-rgb);
+  --ion-color-shade: var(--ion-color-loading-shade);
+  --ion-color-tint: var(--ion-color-loading-tint);
 
 }
 .ion-color-gradient{

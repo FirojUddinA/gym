@@ -1,0 +1,38 @@
+<ion-content color="loading">
+
+    <svg class="app-spinner" viewBox="0 0 28 28" width="170" height="170">
+        <style>
+            .app-spinner-loader {
+                transform-origin: 50% 50%;
+                animation: rotate 1333ms linear infinite;
+                transform: rotate(30deg);
+            }
+            .app-spinner-loader-path {
+                fill: none;
+                stroke-width: 8%;
+                stroke-dasharray: 10, 80;
+                stroke-dashoffset: 0;
+                stroke-linecap: round;
+                stroke: #fff;
+            }
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0deg)
+                }
+                100% {
+                    transform: rotate(360deg)
+                }
+            }
+            .app-spinner-loader-path2 {
+                fill: none;
+                stroke: #afafaf;
+                stroke-width: 3.5%;
+            }
+        </style>
+        <g class="app-spinner-loader">
+            <circle class="app-spinner-loader-path2" cx="14" cy="14" r="8"></circle>
+            <circle class="app-spinner-loader-path" cx="14" cy="14" r="8"></circle>
+        </g>
+    </svg>
+
+</ion-content>
