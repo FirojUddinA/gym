@@ -94,22 +94,25 @@ ion-footer{
   position: relative;
   border-width: 0;
   margin-bottom: 30px;
-  box-shadow: 0 0 30px #ffffff ;
+  //box-shadow: 0 0 30px #ffffff ;
 
   &.footer-md::before {
     height: 0 !important;
   }
 div{
   position: relative;
-  &:before{
+  .shadow-overlay{
+    display: block;
     position: absolute;
     content: '';
     height: 50px;
     width: 100%;
     top: -50px;
     left: 0;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,254,254,0.7) 50%, rgba(255,255,255,0.2) 100%);
+    pointer-events: none;
+    border-radius: 0;
+    //background: rgb(255, 255, 255);
+    //background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,254,254,0.7) 50%, rgba(255,255,255,0.2) 100%);
   }
   ion-icon{
     position: absolute;
